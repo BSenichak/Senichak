@@ -1,0 +1,104 @@
+body {
+	background-color: black;
+}
+
+.additional {
+	text-align: center;
+}
+.slogan {
+	color: white;
+	margin: 50px 0;
+}
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+.container {
+	background: linear-gradient(to right, red, orange, yellow, green, skyblue, blue, purple);
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 15px;
+	border-bottom: 1px solid black;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, 0.2);
+	width: 500px;
+	height: 100px;
+	float: right;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.logo {
+	float: left;
+	margin-left: 100px;
+}
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.navigation {
+	list-style: none;
+}
+
+.navigation li {
+	display: inline-block;
+}
+
+.navigation a{
+	margin: 0 10px;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	line-height: 60px;
+}	
+
+.navigation a:hover {
+	color: yellow;
+	
+}
+
+.navigation a:visited{
+	color: pink;
+}
+
+.article {
+	width: 65%;
+	float: left;
+}
+
+.sidebar {
+	width: 33%;
+	float: right;
+	border: 1px solid black;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.tovar {
+	border: 1px solid black;
+	padding: 5px;
+	margin-top: 10px;
+	color: white;
+}
+
+.tovimg {
+	float: right;
+}
+
+textarea {
+	margin-top: 10px;
+	width: 300px;
+	height: 200px;
+}
+
+input {
+	width: 300px;
+}

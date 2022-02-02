@@ -1,0 +1,15 @@
+table, th, td{
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+}  
+
+img {
+	width: 200px;
+}
+
+table{
+	background-color: blue;
+	font-size: 20px;
+	color: white;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Анкета</title>
+	<!--
+	<style type="text/css">
+		*{
+			font-family: cursive;
+			color: gray;
+			text-shadow: 1px 1px black ;
+		}
+		body {
+			background: linear-gradient(45deg, #161055, #72030c);
+		}
+
+	</style>
+-->
+</head>
+<body>
+	<form>
+	<center>
+		<img src="https://cdn.bitrix24.ua/b4529463/landing/2b6/2b6e3fb4744e1c389a022c432e3b10b1/logo_blue_1x.png"><br>
+		<hr>
+		<h3>Ім'я</h3>
+		<input type="text" name="name" required>
+		<h3>Фамілія</h3>
+		<input type="text" name="surname" required><br><br>
+		<input type="email" name="mail" placeholder="Електронна пошта"><br><br>
+		<input type="password" name="password" placeholder="Пароль">
+		<hr>
+		<h3>Коротко про себе</h3>
+		<textarea placeholder="some info"></textarea>
+		<hr>
+		<h3>Гендер</h3>
+		<input type="radio" name="gender">М<br>
+		<input type="radio" name="gender">Ж<br>
+		<input type="radio" name="gender" checked>Х<br>
+		<hr>
+		<h3>улюблений колір</h3>
+		<input type="checkbox" name="color" value="r">Червоний<br>
+		<input type="checkbox" name="color" value="y">Жовтий<br>
+		<input type="checkbox" name="color" value="b">Синій<br>
+		<hr>
+		<h3>З якого ви міста</h3>
+		<select>
+			<option>Київ</option>
+			<option>Одеса</option>
+			<option>Харків</option>
+			<option>Львів</option>
+			<option>Донецьк</option>
+		</select>
+		<hr>
+		<h3>куди ви бажаєте поїхати?</h3>
+		<select size="3">
+			<option>Київ</option>
+			<option>Одеса</option>
+			<option>Харків</option>
+			<option>Львів</option>
+			<option>Донецьк</option>
+		</select><br><br>
+		<input type="submit" name="send" value="Send">
+		<input type="reset" name="red" value="Reset">
+
+	</center>
+	</form>
+</body>
+</html>

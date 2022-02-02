@@ -1,0 +1,40 @@
+body {
+	background-color: yellowgreen;
+}
+
+table, td {
+	border-style: dotted;
+	border-width: 1px;
+	border-color: black;
+}
+
+td{
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	border-radius: 50%;
+}
+
+td:hover {
+	background-color: orange;
+}
+
+img {
+	width: 100px;
+	border-radius: 50%;
+}
+
+input {
+	border-color: yellow;
+}
+
+input:focus {
+	border-color: blue;
+}
+
+a:visited {
+	color: orange;
+}

@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	list-style: none;
+}
+
+
+.o {
+	width: 100px;
+	height: 100px;
+	border-style: solid;
+	border-width: 10px;
+	border-color: black;
+	border-radius: 50%;
+}
+
+.blue {
+	border-color: blue;
+	float: left;
+}
+
+.black {
+	border-color: black;
+	float: left;
+}
+
+.red {
+	border-color: red;
+	float: left;
+}
+
+.yellow {
+	position: relative;
+	left: 60px;
+	top: 105px;
+	border-color: yellow;
+}
+
+.green {
+	position: relative;
+	left: 180px;
+	top: -15px;
+	border-color: green;
+}

@@ -1,0 +1,23 @@
+table {
+	border: solid 1px black;	
+	font-size: 50px;
+	font-family: monospace;
+}
+
+td{
+	border: solid 1px black;
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	background-color: #74ccd4;
+}
+
+.c {
+	width: 200px;
+	height: 200px;
+	background-color: #991525;
+	color: white;
+}
+#f {
+	background-color: white;
+}

@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	width: 1000px;
+	height: 500px;
+	border: 1px solid black;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.box {
+	width: 150px;
+	min-height: 150px;
+	font-family: cursive;
+	font-size: 70px;
+	text-align: center;
+}
+
+.one {
+	background-color: red;
+}
+
+.two {
+	background-color: blue;
+	order: 1;
+}
+
+.three {
+	background-color: green;
+	order: 2;
+}
+
+.four {
+	background-color: yellow;
+}

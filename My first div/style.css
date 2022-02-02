@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: linear-gradient(to right, purple, blue);
+}
+
+.first {
+	background-color: red ;
+	border-radius: 50%;
+	height: 500px;
+	width: 500px;
+	margin: 200px auto;
+	border: 5px dashed black;
+}
+
+.second {
+	background-color: white;
+	border-radius: 50%;
+	margin: 0px auto;
+	margin-top: 50px;
+	height: 400px;
+	width: 400px;
+	border: 1px solid; black;
+}
+
+.three {
+	background-color: red;
+	border-radius: 50%;
+	margin: 0px auto;
+	margin-top: 50px;
+	height: 300px;
+	width: 300px;
+	border: 1px solid; black;
+}
+
+.four {
+	background-color: white;
+	border-radius: 50%;
+	margin: 0px auto;
+	margin-top: 50px;
+	height: 200px;
+	width: 200px;
+	border: 1px solid; black;
+}
+
+.five {
+	background-color: red;
+	border-radius: 50%;
+	margin: 0px auto;
+	margin-top: 50px;
+	height: 100px;
+	width: 100px;
+	border: 1px solid; black;
+}
