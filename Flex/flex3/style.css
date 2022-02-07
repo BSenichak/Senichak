@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	border: 1px dotted black;
+	flex-wrap: nowrap;
+	height: 300px;
+	align-items: center;
+}
+
+.box {
+	text-align: center;
+	font-size: 80px;
+	border-radius: 20px;
+	height: 100px;
+	width: 200px;
+	flex-shrink: 1;
+}
+
+.one {
+	background-color: red;
+}
+.two {
+	background-color: green;
+	flex: 0 0 200px;
+}
+.three {
+	background-color: blue;
+	
+}
+.four {
+	background-color: yellow;
+	flex: 1 0 auto;
+}
+.five {
+	background-color: purple;
+}
+.six {
+	background-color: pink;
+	flex-shrink: 0;
+}

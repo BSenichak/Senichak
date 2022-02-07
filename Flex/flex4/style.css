@@ -1,0 +1,22 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.link {
+	padding: 5px 20px;
+	flex-grow: 1;
+	text-align: center;
+	flex-basis: 100px;
+}
+
+.container {
+	border:  1px solid blue;
+	display: flex;
+	font-size: 40px;
+	flex-wrap: wrap;
+}
+
+.link:hover {
+	border-bottom: 5px solid blue\;
+}
