@@ -10,7 +10,11 @@
 </head>
 <body>
     <div class="wrapper">
+        <header class="top">   
+            <h1><a href="">My second site</a></h1>
+        </header>
         <nav class="flex-nav">
+            <a href="#" class="togglenav">Menu</a>
             <ul>
                 <li><a href="#">Item 1</a></li>
                 <li><a href="#">Item 1</a></li>
@@ -24,6 +28,30 @@
                 <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
         </nav>
+        <section class="banner">
+            <img src="https://cf2.ppt-online.org/files2/slide/u/UmxYZ4wOg5r6JQdIlRjX8eESCtTkycH97pF23s/slide-0.jpg" alt="">
+        </section>
+        <section class="content">
+            <p>Тут може бути ваша реклама</p>
+        </section>
+        <section class="signup">
+            <form action="" method="post" class="signup">
+                <input type="text" name="" id="" placeholder="Yoyr namre">
+                <input type="email" name="" id="" placeholder="Email Adress">
+                <input type="submit" value="sign me up">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; by Senichak Bohdan</p>
+        </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.togglenav').on('click', function() {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 </html>
