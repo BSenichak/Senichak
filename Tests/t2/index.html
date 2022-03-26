@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="btn">push me!</div>
+    <div class="zov">
+        <div class="vn"></div>
+    </div>
+    <script>
+        var pr = 0;
+        pb = document.querySelector(".vn");
+        btn = document.querySelector(".btn");
+        btn.addEventListener("click", a);
+        pb.style.background = "black";
+
+        function a(){
+        idinterval = setInterval(() => {
+            pb.style.background = "gray";
+            prt = pr + "%";
+            pb.style.width = prt;
+            pr += 0.1;
+            pb.innerHTML = Math.round(pr) + "%"
+            if(pr > 98){
+                clearInterval(idinterval);
+                pb.innerHTML = "100%";
+            }
+        }, 10);
+    }
+
+    </script>
+</body>
+</html>
