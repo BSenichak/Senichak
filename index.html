@@ -1,60 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="X-UA-Compatible">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My home page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://static-cdn.jtvnw.net/jtv_user_pictures/no_mercy_pwnz_2-profile_image-5194229e177f13c9-300x300.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header class="top">
-			<p>ROBOCODE</p>
-		</header>
-		<nav class="flex-nav">
-			<a href="#" class="togglenav">Menu</a>	
-			<ul>	
-				<li><a href="Senichak/Tests/t1/prac 10.html">Item 1</a></li>
-                <li><a href="Senichak/Tests/t2/index.html">Item 2</a></li>
-                <li><a href="Senichak/Tests/t3/index.html">Item 3</a></li>
-                <li><a href="Senichak/Tests/jQuery/t1.html">Item 4</a></li>
-                <li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
-                <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
-			</ul>
-		</nav>
-		<section class="banner">
-			<img src="https://avatars.mds.yandex.net/get-zen_doc/30229/pub_5d6f595c1e8e3f00ade0395f_5d6f5a01d7859b00adb85da0/scale_1200">
-		</section>
-		<section class="content">
-			Тут може бути ваша реклама
-		</section>
-		<section class="signup">
-			<form action="">
-				<input type="text" placeholder="Name">
-				<input type="email" placeholder="Email">
-				<input type="submit" value="Надіслати">
-			</form>
-		</section>
-		<footer>
-			<p>&copy; by Senichak Bohdan</p>
-		</footer>
-	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!--<script>
-		$(function(){
-            $('.togglenav').on('click', function() {
-                $('.flex-nav ul').toggleClass('open');
-            });
-        });
-	</script>	
--->
-	<script>
-		let a = document.getElementsByClassName("togglenav")[0];
-		let b = document.getElementsByClassName("flex-nav")[0].getElementsByTagName("ul")[0]
-		a.addEventListener("click", () => b.classList.toggle("open"))
-	</script>
+    <div class="wrapper">
+        <header>
+            <ul class="navig">
+                <li class="item">
+                    <img src="https://dcnt5qvi2hv76.cloudfront.net/b4529463/resize_cache/37428/23365dd92c1f65a6eb81283cfddb6812/main/9f0/9f08119584f43f392995fccc0ce1206c/photo_2021-08-10_20-34-57.png" style="border-radius: 50%;height: 100px; padding-top: 5px;">
+                    <p class="name">
+                        Bohdan Senichak
+                    </p>
+                </li>
+                <li class="item">HTML
+                    <ul class="subnav">
+                        <li class="sub">Тут</li>
+                        <li class="sub">зовсім</li>
+                        <li class="sub">нічого</li>
+                        <li class="sub">немає</li>
+                        <li class="sub">😉</li>
+                    </ul>
+                </li>
+                <li class="item">CSS
+                    <ul class="subnav">
+                        <li class="sub">Тут</li>
+                        <li class="sub">зовсім</li>
+                        <li class="sub">нічого</li>
+                        <li class="sub">немає</li>
+                        <li class="sub">😉</li>
+                    </ul>
+                </li>
+                <li class="item">JavaScript
+                    <ul class="subnav">
+                        <li class="sub">Тут</li>
+                        <li class="sub">зовсім</li>
+                        <li class="sub">нічого</li>
+                        <li class="sub">немає</li>
+                        <li class="sub">😉</li>
+                    </ul>
+                </li>
+                <li class="item">Contacts
+                    <ul class="subnav">
+                        <li class="sub">Тут</li>
+                        <li class="sub">зовсім</li>
+                        <li class="sub">нічого</li>
+                        <li class="sub">немає</li>
+                        <li class="sub">😉</li>
+                    </ul>
+                </li>
+                <li class="item ">Other
+                    <ul class="subnav">
+                        <li class="sub">Тут</li>
+                        <li class="sub">зовсім</li>
+                        <li class="sub">нічого</li>
+                        <li class="sub">немає</li>
+                        <li class="sub">😉</li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="content">
+                <section>
+                    <img height="150px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="">
+                    <p>HTML я не знаю. Ну знаю, чучуть, ну так на відсотків 30%, але ж ми всі знаєм що крім тегу div нічого знати не потрібно. але я ще знаю як картиночки добавляти, і навіть знаю як зробити форму і таблицю, може ще щось але я вже забув)</p>
+                </section>
+                <hr>
+                <section>
+                    <img height="150px" src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="">
+                    <p>А от CSS я знаю трішки краще, десь на 31%, але вмію працювати з флексом, ага а ви вмієте, а я вмію, а ще я поганувато але знаю грід, хтось ще знає крім мене грід, ну от, а ще я вмію робити градієнт, подивіться який гарний на кнопці зправа. а все що не знаю швидко гуглю, я знаю що так всі вміють, але чого б ні...</p>
+                </section>
+                <hr>
+                <section>
+                    <img height="150px" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2038874-1720087.png" alt="">
+                    <p>А цю страшну штуку взагалі вивчити не можна, ви бачили яка це агромна мова, ще ж жах, я здається вивчив якийсь розділ, а в нього є ще 100 підрозділів про методи і тд, а в них ще по 100 під-підрозділів, але сама цікава мова з тих що я вчив, ріл ток, сінк ебаут іт)</p>
+                </section>
+                <hr>
+                <section>
+                    <img height="150px" src="https://w7.pngwing.com/pngs/233/344/png-transparent-camera-lens-logo-camera-lens-icon-video-camera-lens-purple-electronics-lens.png" alt="">
+                    <p>А оптику мабуть ніхто і на 1% незнає, наука здається цікавою до того моменту поки не почнеш її вчити, потім тобі хочеться тільки плакати, особливо воли вона починає наближатись до <b>квантовох механіки</b> <br> А ще мене обманули, пікча не без фону(</p>
+                </section>
+                <hr>
+                <section style="display: block; text-align: center;">  
+                    <p>Краще подивіться на цього молодого блогера</p>
+                    <iframe width="400" height="300" src="https://www.youtube.com/embed/lJFgZ9deTSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </section>
+            </div>
+            <aside>
+                <p class="asaideitem">My links</p>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/badyasik_/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://t.me/Badyasik"><i class="fa fa-telegram"></i></a></li>
+                    <li><a href="https://www.facebook.com/alexey.arestovich"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/BSenichak"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCVZIj9mreByhv_3K7itKJZA"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                <p class="asaideitem">
+                    Send me something !!!
+                </p>  
+                <input type="text" class="textinput" placeholder="Nickname">
+                <textarea rows="3" placeholder="hello">
+
+                </textarea>
+                <input type="submit" value="Send" class="submitbtn">
+                <p class="subbtn">this button is not working...      </p>
+            </aside>
+        </main>
+        <footer>
+            Powered by Sergey Pogrebec
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

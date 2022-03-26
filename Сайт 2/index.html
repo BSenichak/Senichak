@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="top">
+			<p>ROBOCODE</p>
+		</header>
+		<nav class="flex-nav">
+			<a href="#" class="togglenav">Menu</a>	
+			<ul>	
+				<li><a href="Senichak/Tests/t1/prac 10.html">Item 1</a></li>
+                <li><a href="Senichak/Tests/t2/index.html">Item 2</a></li>
+                <li><a href="Senichak/Tests/t3/index.html">Item 3</a></li>
+                <li><a href="Senichak/Tests/jQuery/t1.html">Item 4</a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
+			</ul>
+		</nav>
+		<section class="banner">
+			<img src="https://avatars.mds.yandex.net/get-zen_doc/30229/pub_5d6f595c1e8e3f00ade0395f_5d6f5a01d7859b00adb85da0/scale_1200">
+		</section>
+		<section class="content">
+			Тут може бути ваша реклама
+		</section>
+		<section class="signup">
+			<form action="">
+				<input type="text" placeholder="Name">
+				<input type="email" placeholder="Email">
+				<input type="submit" value="Надіслати">
+			</form>
+		</section>
+		<footer>
+			<p>&copy; by Senichak Bohdan</p>
+		</footer>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!--<script>
+		$(function(){
+            $('.togglenav').on('click', function() {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+	</script>	
+-->
+	<script>
+		let a = document.getElementsByClassName("togglenav")[0];
+		let b = document.getElementsByClassName("flex-nav")[0].getElementsByTagName("ul")[0]
+		a.addEventListener("click", () => b.classList.toggle("open"))
+	</script>
+</body>
+</html>
