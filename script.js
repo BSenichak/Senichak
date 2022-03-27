@@ -4,3 +4,8 @@ let a = document.querySelectorAll(".item");
                 e.target.querySelector(".subnav").classList.toggle("open")
             })
         }
+
+let b = document.querySelector(".menibtn");
+b.addEventListener("click", ()=>{
+    document.querySelector(".navig").classList.toggle("openn");
+    })

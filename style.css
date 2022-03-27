@@ -17,9 +17,25 @@ body {
     background-color: white;
     margin-top: 20px;
     border-radius: 5px;
+    min-width: 420px;
 }
 
 /*    -----header-----       */
+
+
+.pagename {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.pagename > p {
+    margin: 0 30px;
+}
 
   header {
     position: sticky;
@@ -28,9 +44,11 @@ body {
     border-radius: 5px;
 }
 
-.name {
-    font-size: 10px;
+.menibtn {
     text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    display: none;
 }
 
 .navig {
@@ -41,6 +59,7 @@ body {
     font-size: 30px;
     font-family: cursive;
     cursor: pointer;
+    padding: 20px 0;
 }
 
 .subnav {
@@ -54,7 +73,10 @@ body {
 }
 
 .subnav > .sub {
-    padding: 5px 30px   ;
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+    text-align: start;
+    width: max-content;
 }
 
 .open {
@@ -148,4 +170,32 @@ footer{
     height: 100px;
     justify-content: center;
     align-items: center;
+}
+
+
+@media all and (max-width: 600px){
+    main {
+        flex-direction: column;
+    }
+
+    .navig {
+        flex-direction: column;
+    }
+
+    .navig {
+        display: none;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        right: 0;
+
+    }
+
+
+    .menibtn {
+        display: block;
+    }
+}
+
+.openn {
+    display: flex;
 }
