@@ -9,11 +9,17 @@
     <script src="jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="btn">click me!</div>
+    <form action="#" id="form"></form>
+    <input type="text" name="texto" form="form">
+    <button type="submit" form="form">push me</button>
+    <div class="result"></div>
     <script>
-        btn = document.querySelector(".btn")
-        btn.addEventListener("click", ()=> fetch("/hello").then(a => console.log(a)))
-        
+        const form = document.querySelector("#form")
+        form.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            let texto = document.querySelector('[name="texto"]').value;
+            console.log(texto);
+        })
     </script>
 </body>
 </html>
