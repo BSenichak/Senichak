@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100vh;
+}
+
+u {
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, white);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: anime 5s linear infinite;
+}
+
+u:nth-child(3n + 1){
+    background: linear-gradient(transparent, #0ff);
+}
+
+u:nth-child(3n + 2){
+    background: linear-gradient(transparent, #0f0);
+}
+
+u:nth-child(3n + 3){
+    background: linear-gradient(transparent, #f00);
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
