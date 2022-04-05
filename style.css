@@ -195,19 +195,20 @@ aside{
 
 .textinput {
     text-align: center;
-    width: 90%;
+    width: 200px;
     padding: 5px;
     margin-top: 10px;
 }
 
 textarea{
-    width: 95%; 
+    width: 200px; 
+    padding: 5px;
     margin-top: 10px;
     text-align: center;
 }
 
 .submitbtn {
-    width: 96%;
+    width: 200px;
     background: linear-gradient(to right, red, orange, yellow, green, rgb(3, 209, 255), blue, purple);
     border: transparent;
     padding: 5px;
@@ -221,6 +222,13 @@ textarea{
     font-size: 10px;
     margin-right: 10%;
     color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -252,6 +260,19 @@ footer{
 
     .menibtn {
         display: block;
+    }
+
+    .textinput {
+
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    .submitbtn {
+        width: 100%;
     }
 }
 
