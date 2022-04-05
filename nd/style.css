@@ -156,7 +156,7 @@ nav>div:hover {
 
 .skill_subcon>div:hover{
     background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 5px 5px black;
+    box-shadow: 0 0 20px 1px black;
 }
 
 .info {
@@ -174,7 +174,15 @@ nav>div:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 1s;
+    
 }
+
+.infoitem:hover {
+    background-color: rgba(255, 255, 255, 0.172);
+}
+
+
 
 .infoitem>img {
     display: block;
@@ -188,7 +196,10 @@ nav>div:hover {
     display: block;
     flex-grow: 2;
     font-family: cursive;
+    transition: all 0.5s;
 }
+
+
 
 .infotitle {
     text-align: center;
