@@ -1,4 +1,8 @@
 let status = {}
+let ninf = JSON.stringify(status);
+var expire = new Date();
+expire.setHours(expire.getHours() + 4);
+document.cookie = "status=" + ninf + ";expires=" + expire.toUTCString() + ";";
 status = JSON.parse(document.cookie.slice(7));
 let articles = document.querySelectorAll(`.starbar`);
 
