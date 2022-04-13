@@ -30,3 +30,18 @@ b.addEventListener("click", ()=>{
         }
     }
     rain();
+
+    function postwriting(text){
+        const textArr = text.innerHTML.split('');
+        text.innerHTML = " ";
+        textArr.forEach((element, index)  => {
+            setTimeout(()=>{
+                text.innerHTML +=element
+            }, 75 * index)
+        });
+    }
+
+postwriting(document.querySelectorAll("section>p")[0])
+postwriting(document.querySelectorAll("section>p")[1])
+postwriting(document.querySelectorAll("section>p")[2])
+postwriting(document.querySelectorAll("section>p")[3])
