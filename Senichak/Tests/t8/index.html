@@ -18,10 +18,12 @@
                         height="35px">
                     <span>anonimus</span></a>
             </div>
+            <div class="nav-menu">MENU</div>
             <div class="nav_container">
+
                 <nav class="header_nav">
                     <div class="hn hb_home"><a href="#">Home</a></div>
-                    <div class="hn hb_categories"><a href="#">Categories ⇩ </a></div>
+                    <div class="hn hb_categories"><a href="#">Categories</a></div>
                     <div class="hn hb_collections"><a href="#">My Collections</a></div>
                     <div class="hn hb_blog"><a href="#">Blog</a></div>
                 </nav>
@@ -296,23 +298,22 @@
                 </div>
             </div>
             <div class="marker">
-                <div class="markeri"></div>
-                <div class="markeri"></div>
-                <div class="markeri"></div>
+                <div class="markeri m1"></div>
+                <div class="markeri m2"></div>
+                <div class="markeri m3"></div>
             </div>
-            <div class="markerleft">◀</div>
-            <div class="markerright">▶</div>
         </div>
         <div class="feedback">
             <div class="fb_head">Become a contributor?</div>
             <div class="fb_subtext">Join us and get tips & tricks to become a great<br> Designer and Developer</div>
-            <div class="fb_send"><input type="text" name="" id="" placeholder="Enter your email..."><input type="button" value="Join Us"></div>
+            <div class="fb_send"><input type="text" name="" id="" placeholder="Enter your email..."><input type="button"
+                    value="Join Us"></div>
         </div>
         <footer>
             <div class="fitem fui1">
                 <div class="logo">
-                    <a href="#"><img src="http://www.downloadclipart.net/large/anonymous-mask-png-transparent.png" alt=""
-                            height="35px">
+                    <a href="#"><img src="http://www.downloadclipart.net/large/anonymous-mask-png-transparent.png"
+                            alt="" height="35px">
                         <span>anonimus</span></a>
                 </div>
                 <h1>Copyright 2022. Anonimus</h1>
@@ -341,6 +342,68 @@
         </footer>
     </div>
     </div>
+    <script>
+        let menbtn = document.querySelectorAll(".nav-menu")[0];
+        let flexcont = document.querySelectorAll(".header_nav")[0];
+        menbtn.addEventListener("click", (e) => {
+            flexcont.classList.toggle("open");
+        });
+
+        let elem = document.getElementsByClassName("vnoteblock")[0];
+        let indec = document.getElementsByClassName("markeri");
+        var w = 0;
+        indec[0].style.backgroundColor = "#FF6E30";
+        indec[1].style.backgroundColor = "#283036";
+        indec[2].style.backgroundColor = "#283036";
+
+        for (let i of indec) {
+            i.addEventListener("click", (e) => {
+                if (e.target.classList.value[9] == '1') {
+                    indec[0].style.backgroundColor = "#FF6E30";
+                    indec[1].style.backgroundColor = "#283036";
+                    indec[2].style.backgroundColor = "#283036";
+                    w = 0;
+                    elem.style.left = w + "%";
+                }
+                else if (e.target.classList.value[9] == '2') {
+                    indec[0].style.backgroundColor = "#283036";
+                    indec[1].style.backgroundColor = "#FF6E30";
+                    indec[2].style.backgroundColor = "#283036";
+                    w = -100;
+                    elem.style.left = w + "%";
+                }
+                else if (e.target.classList.value[9] == '3') {
+                    indec[0].style.backgroundColor = "#283036";
+                    indec[1].style.backgroundColor = "#283036";
+                    indec[2].style.backgroundColor = "#FF6E30";
+                    w = -200;
+                    elem.style.left = w + "%";
+                }
+            })
+        }
+
+        setInterval(() => {
+            elem.style.left = w + "%"
+            if (w == -100) {
+                w -= 100;
+                indec[0].style.backgroundColor = "#283036";
+                indec[1].style.backgroundColor = "#FF6E30";
+                indec[2].style.backgroundColor = "#283036";
+            }
+            else if (w == -200) {
+                w = 0;
+                indec[0].style.backgroundColor = "#283036";
+                indec[1].style.backgroundColor = "#283036";
+                indec[2].style.backgroundColor = "#FF6E30";
+            }
+            else {
+                w -= 100;
+                indec[0].style.backgroundColor = "#FF6E30";
+                indec[1].style.backgroundColor = "#283036";
+                indec[2].style.backgroundColor = "#283036";
+            }
+        }, 3000)
+    </script>
 </body>
 
 </html>
