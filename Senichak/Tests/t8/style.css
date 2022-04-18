@@ -12,12 +12,14 @@ a {
     text-decoration: none;
 }
 
+
 body {
     background-color: #1E252B;
 }
 
 .wrapper {
     max-width: 1600px;
+    min-width: 320px;
     margin: 0 auto;
 }
 
@@ -55,6 +57,17 @@ header {
     color: #DCDDDE;
 }
 
+.nav-menu {
+    display: none;
+    width: 70%;
+    text-align: start;
+    padding-left: 50px;
+    color: #DCDDDE;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
 .login {
     display: flex;
     font-family: 'Rajdhani', sans-serif;
@@ -85,22 +98,22 @@ header {
 
 .wellcome {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 700px;
     width: 100%;
 }
 
 .w_image {
-    width: 50%;
     text-align: center;
 }
 
 .w_image img {
     height: 580px;
+
 }
 
 .w_text {
-    padding-left: 150px;
+    flex-shrink: 0;
 }
 
 .w_text_g {
@@ -193,7 +206,7 @@ header {
     background-color: #FF6E30;
 }
 
-::-webkit-scrollbar-corner{
+::-webkit-scrollbar-corner {
     background-color: #1E252B;
 }
 
@@ -214,13 +227,13 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 1300px;
+    width: 95%;
     margin: 0 auto;
     margin-top: 50px;
 }
 
 .bitem {
-    width: 380px;
+    width: 28%;
     margin: 20px;
     padding: 30px;
     border-radius: 10px;
@@ -241,14 +254,14 @@ header {
 
 .bc_h {
     color: #DCDDDE;
-    font-size: 25px     ;
+    font-size: 25px;
 
 }
 
 .bc_h span {
     font-size: 18px;
     color: #9A6C31;
-} 
+}
 
 .bi_t {
     color: #9A9D9F;
@@ -263,7 +276,8 @@ header {
     justify-content: space-around;
     margin-right: 30px;
 }
-.likebar i{
+
+.likebar i {
     flex-grow: 1;
 }
 
@@ -279,7 +293,7 @@ header {
 
 .bitem:hover {
     background: linear-gradient(45deg, #1E252B 75%, #ff6e303f);
-    
+
 }
 
 .likebar i:hover {
@@ -302,15 +316,17 @@ header {
 }
 
 .more-btn:hover {
-    border: 2px solid #FF6E30;box-shadow:  0 0 5px #FF6E30;
+    border: 2px solid #FF6E30;
+    box-shadow: 0 0 5px #FF6E30;
 }
 
 
 .trusted {
-    margin: 200px 108px;
+    margin: 200px auto;
     background: linear-gradient(-45deg, #21282F 85%, #ff6e303f);
     border-radius: 25px;
     padding: 25px;
+    width: 95%;
 }
 
 .trusted_head {
@@ -318,13 +334,13 @@ header {
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
-    color: #DCDDDE;    
+    color: #DCDDDE;
     text-align: center;
     margin-top: 25px;
 }
 
 .trusted_iconbar {
-    margin: 50px auto ;
+    margin: 50px auto;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -335,24 +351,26 @@ header {
 
 .secondbloks {
     display: flex;
-    margin: 0 108px;
+    margin: 0 auto;
+    width: 95%
 }
 
 .sbt {
     width: 50%;
     height: 100%;
+    padding-left: 60px;
 }
 
 .sbt_head {
     font-family: 'Kanit', sans-serif;
-    color: #DCDDDE;  
+    color: #DCDDDE;
     font-size: 45px;
     padding-top: 80px;
 }
 
 .sbt_text {
     font-family: 'Kanit', sans-serif;
-    color: #83868A;  
+    color: #83868A;
     font-size: 18px;
     margin-top: 20px;
 }
@@ -364,7 +382,7 @@ header {
     margin-top: 60px;
     border-radius: 8px;
     font-family: 'Kanit', sans-serif;
-    color: #DCDDDE; 
+    color: #DCDDDE;
     font-size: 14px;
 }
 
@@ -375,7 +393,7 @@ header {
 }
 
 .sbitem {
-    width: 300px;
+    width: 45%;
     margin: 10px;
     padding: 30px;
     border-radius: 10px;
@@ -391,7 +409,7 @@ header {
 
 .sbitem:hover {
     background: linear-gradient(45deg, #1E252B 75%, #ff6e303f);
-    
+
 }
 
 .noteblock {
@@ -402,10 +420,11 @@ header {
 }
 
 .vnoteblock {
+    position: relative;
     height: 100%;
     width: 300%;
     display: flex;
-    
+
 }
 
 .nbi {
@@ -416,8 +435,8 @@ header {
 }
 
 .nbi img {
-   height: 80%;
-   filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.168));
+    height: 80%;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.168));
 }
 
 .nbi_note {
@@ -440,30 +459,14 @@ header {
     height: 10px;
     display: flex;
     justify-content: space-between;
+
 }
 
 .markeri {
     width: 30%;
     background-color: #283036;
     border-radius: 5px;
-}
-
-.markerleft {
-    position: absolute;
-    left: 100px;
-    top: 30%;
-    color: #FF6E30;
-    font-size: 50px;
-    font-family: 'Kanit', sans-serif;
-}
-
-.markerright {
-    position: absolute;
-    right: 100px;
-    top: 30%;
-    color: #FF6E30;
-    font-size: 50px;
-    font-family: 'Kanit', sans-serif;
+    transition: all 0.5s;
 }
 
 .feedback {
@@ -493,7 +496,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #283036;
-    width: 50%;
+    width: max-content;
     margin: 0 auto;
 }
 
@@ -516,7 +519,7 @@ header {
     font-family: 'Rajdhani', sans-serif;
     font-weight: 1000;
     font-size: 18px;
-    
+
 }
 
 .fb_send input[type="text"]:focus {
@@ -567,4 +570,446 @@ footer {
     font-weight: 1000;
     font-size: 16px;
     margin: 30px 0;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /*header*/
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .login {
+        width: 200px;
+    }
+
+    /*wellcome*/
+    .w_image img {
+        display: none;
+    }
+
+    .w_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .findbar {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 762px) and (max-width: 992px) {
+
+    /*header*/
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_nav {
+        position: absolute;
+        display: none;
+        background-color: #353B41;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .hn {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .login {
+        width: 30%;
+    }
+
+    /*wellcome*/
+    .w_image img {
+        display: none;
+    }
+
+    .w_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .findbar {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bitem {
+        width: 40%;
+    }
+
+    .trusted {
+        margin: 50px auto;
+    }
+
+    .secondbloks {
+        flex-direction: column;
+    }
+
+    .sbt {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sbt_btn {
+        margin: 30px auto;
+    }
+
+    .sbb_container {
+        width: 95%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .nbi img {
+        display: none;
+    }
+
+    .nbi_note {
+        width: 60%;
+    }
+
+    .noteblock {
+        height: 250px;
+        margin: 50px auto;
+    }
+
+    .feedback {
+        margin: 50px auto;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .fitem {
+        width: 50%;
+    }
+
+    .fui1 .logo {
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    /*header*/
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 50px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_nav {
+        position: absolute;
+        display: none;
+        background-color: #353B41;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .hn {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav-menu {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .login {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    /*wellcome*/
+    .w_image img {
+        display: none;
+    }
+
+    .w_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .findbar {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bloks_header {
+        font-size: 50px;
+    }
+
+    .bitem {
+        width: 40%;
+    }
+
+    .trusted {
+        margin: 50px auto;
+    }
+
+    .trusted_iconbar {
+        flex-wrap: wrap;
+    }
+
+    .trusted_iconbar span {
+        width: 50%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .secondbloks {
+        flex-direction: column;
+    }
+
+    .sbt {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .sbt_btn {
+        margin: 30px auto;
+    }
+
+    .sbb_container {
+        width: 95%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .nbi img {
+        display: none;
+    }
+
+    .nbi_note {
+        width: 60%;
+    }
+
+    .noteblock {
+        height: 250px;
+        margin: 50px auto;
+    }
+
+    .feedback {
+        margin: 50px auto;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .fitem {
+        width: 50%;
+    }
+
+    .fui1 .logo {
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+
+    /*header*/
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_nav {
+        position: absolute;
+        display: none;
+        background-color: #353B41;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        min-width: 320px;
+        flex-wrap: wrap;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .hn {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .nav-menu {
+        display: block;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .login {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    /*wellcome*/
+    .w_image img {
+        display: none;
+    }
+
+    .w_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .findbar {
+        display: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bloks_header {
+        font-size: 50px;
+    }
+
+    .bitem {
+        width: 100%;
+    }
+
+    .trusted {
+        margin: 50px auto;
+    }
+
+    .trusted_iconbar {
+        flex-wrap: wrap;
+    }
+
+    .trusted_iconbar span {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .secondbloks {
+        flex-direction: column;
+    }
+
+    .sbt {
+        text-align: center;
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .sbt_btn {
+        margin: 30px auto;
+    }
+
+    .sbb_container {
+        width: 95%;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .sbitem {
+        width: 100%;
+    }
+
+    .nbcon {
+        display: none;
+    }
+
+    .feedback {
+        margin: 50px auto;
+        width: 95%
+    }
+
+    .fb_send {
+        width: 300px
+    }
+
+    .fb_send input[type="button"] {
+        padding: 5px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    .fitem {
+        width: 100%;
+    }
+
+    .fui1 .logo {
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+
+    .signup_btn {
+        padding: 0;
+        background: none;
+    }
+}
+
+a:hover {
+    color: #ef7b4a;
+}
+
+.signup_btn:hover a {
+    color: #1E252B;
 }
