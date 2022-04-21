@@ -1,9 +1,0 @@
-{
-    "name": "expressapp",
-    "version": "1.0.0",
-    "dependencies": {
-        "express": "^4.17.0",
-        "express-handlebars": "^6.0.5",
-        "hbs": "^4.2.0"
-    }
-}
