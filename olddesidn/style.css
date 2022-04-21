@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: transparent;
+}
+
+.body{
+    background-color: black;
+    overflow: hidden;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+u {
+    position: absolute;
+    height: 200px;
+    background: linear-gradient(transparent, white);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: anime 5s linear infinite;
+}
+
+u:nth-child(3n + 1){
+    background: linear-gradient(transparent, #0ff);
+}
+
+u:nth-child(3n + 2){
+    background: linear-gradient(transparent, #0f0);
+}
+
+u:nth-child(3n + 3){
+    background: linear-gradient(transparent, #f00);
+}
+
+@keyframes anime {
+    0% {
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(calc(100vh + 200px));
+    }
+}
+
+a{
+    color: black;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: red;
+}
+
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    min-width: 420px;
+    position: relative;
+    top: -100vh;
+}
+
+/*    -----header-----       */
+
+
+.pagename {
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.pagename > p {
+    margin: 0 30px;
+}
+
+  header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menibtn {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    display: none;
+}
+
+.navig {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    font-family: cursive;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.subnav > .sub {
+    padding: 5px 0;
+    border-bottom: 1px solid black;
+    text-align: start;
+    width: max-content;
+}
+
+.open {
+    display: block;
+}
+
+/*    -----main------ */ 
+
+main{
+    display: flex;
+}
+
+/*     -----content------     */
+
+.content {
+    flex-basis: 75%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;  
+}
+
+section > p {
+    flex-basis: 70%;
+}
+
+
+/*      ------aside------      */
+
+aside{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.asaideitem {
+    font-family: cursive;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.social > li {
+    padding: 5px;
+}
+
+.textinput {
+    text-align: center;
+    width: 200px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 200px; 
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submitbtn {
+    width: 200px;
+    background: linear-gradient(to right, red, orange, yellow, green, rgb(3, 209, 255), blue, purple);
+    border: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+.subbtn {
+    text-align: end;
+    font-size: 10px;
+    margin-right: 10%;
+    color: gray;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media all and (max-width: 600px){
+    main {
+        flex-direction: column;
+    }
+
+    .navig {
+        flex-direction: column;
+    }
+
+    .navig {
+        display: none;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        right: 0;
+
+    }
+
+
+    .menibtn {
+        display: block;
+    }
+
+    .textinput {
+
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+    
+    .submitbtn {
+        width: 100%;
+    }
+}
+
+.openn {
+    display: flex;
+}

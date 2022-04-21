@@ -1,47 +1,21 @@
-let a = document.querySelectorAll(".item");
-       for(let i = 0; i < a.length; i++){
-            a[i].addEventListener("click", (e)=>{
-                e.target.querySelector(".subnav").classList.toggle("open")
-            })
-        }
+let Itext = document.querySelectorAll(".itemtext p");
+let op = document.createElement("h4");
+op.append("More_");
+for (i of Itext) {
+    i.classList.add("exit");
+}
 
-let b = document.querySelector(".menibtn");
-b.addEventListener("click", ()=>{
-    document.querySelector(".navig").classList.toggle("openn");
-    });
-
-    function rain(){
-        let amount = 200;
-        let body = document.querySelector(".body");
-        let i = 0;
-        while(i < amount){
-            let drop = document.createElement("u");
-            let size = Math.random() * 5;
-            let posX = Math.floor(Math.random()* window.innerWidth);
-            let delay = Math.random() + -20
-            let duration = Math.random() + 2
-            drop.style.width = 0.2 + size+'px';
-            drop.style.left = posX + 'px';
-            drop.style.animationDelay = delay + 's'
-            drop.style.animationDuration = 1+ duration + 's'
-
-             body.appendChild(drop)
-             i++
-        }
+for (i of Itext) {
+    i.classList.add("exit");
+    let a = i.parentNode.parentNode.classList[1][2];
+    if (parseInt(i.offsetHeight) >= 83) {
+        document.querySelector(`.it${a} h4`).innerHTML = "MORE_"
     }
-    rain();
+    document.querySelector(`.it${a} h4`).addEventListener("click", () => {
+        document.querySelector(`.it${a} h4`).innerHTML = "";
+        document.querySelector(`.it${a} p`).classList.remove("exit");
+    })
+}
 
-    function postwriting(text){
-        const textArr = text.innerHTML.split('');
-        text.innerHTML = " ";
-        textArr.forEach((element, index)  => {
-            setTimeout(()=>{
-                text.innerHTML +=element
-            }, 75 * index)
-        });
-    }
 
-postwriting(document.querySelectorAll("section>p")[0])
-postwriting(document.querySelectorAll("section>p")[1])
-postwriting(document.querySelectorAll("section>p")[2])
-postwriting(document.querySelectorAll("section>p")[3])
+
