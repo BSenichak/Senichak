@@ -286,8 +286,14 @@ footer {
     text-align: end;
     color: #4A0FC6;
     margin-right: 10px;
-
+    cursor: pointer;
+    transition: all 0.5s;
 }
+
+.itemtext h4:hover {
+    font-size: 16pt;
+}
+
 
 .btns {
     display: flex;
@@ -329,6 +335,7 @@ footer {
     top: 0;
     right: 0;
     background-color: #0DF0F0;
+    transition: width .5s;
 }
 
 .visit {
@@ -340,6 +347,25 @@ footer {
     font-size: 18pt;
     cursor: pointer;
 }
+.btn:hover{
+   animation: 1s linear infinite trus;
+}
+
+@keyframes trus {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-5px);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
 
 .exit {
 

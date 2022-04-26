@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    gap: 20px;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.item {
+    min-width: 100%;
+    /*scroll-snap-align: start;*/
+    height: 50px;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.item:nth-child(1){
+    background-color: red;
+}
+.item:nth-child(2){
+    background-color: green;
+}
+.item:nth-child(3){
+    background-color: blue;
+}
+.item:nth-child(4){
+    background-color: pink;
+}
