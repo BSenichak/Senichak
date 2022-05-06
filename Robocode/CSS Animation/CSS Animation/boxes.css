@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--first: #e85151;
+	--second: #f0a11a;
+	--third: #eded53;
+	--fourth: #a3ed53;
+	--fifth: #53ed72;
+	--sixth: #53edde;
+	--seventh: #ed53c7;
+	--eighth: #5356ed;
+	--ninth: #c953ed;
+}
+
+body {
+	background: rgba(252, 249, 245);
+	font-family: sans-serif;
+}
+
+.grid {
+	display: grid; 
+	grid-template-columns: repeat(3, 200px);
+	grid-template-rows: repeat(3, 200px);
+	grid-gap: 20px;
+	justify-content: center;
+	padding: 50px;
+}
+
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 42px;
+	box-shadow: 0 0 5px black;
+	color: white;
+	text-shadow: 0 0 2px black;
+	border-radius: 50%;
+}
+
+.item1 { background: var(--first); }
+.item2 { background: var(--second); }
+.item3 { background: var(--third); }
+.item4 { background: var(--fourth); }
+.item5 { background: var(--fifth); }
+.item6 { background: var(--sixth); }
+.item7 { background: var(--seventh); }
+.item8 { background: var(--eighth); }
+.item9 { background: var(--ninth); }

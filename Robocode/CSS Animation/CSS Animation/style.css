@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding-top: 50px;
+	overflow-y: scroll;
+	background: #1492AE;
+	font-family: sans-serif;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 3px solid white;
+	border-radius: 50px;
+	width: 500px;
+	height: 600px;
+	padding: 50px 0;
+	margin: 0 auto;
+}
+
+.block_img {
+	width: 400px;
+	height: 400px;
+}
+
+.block_img img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.block_text {
+	color: white;
+	font-size: 72px;
+}
