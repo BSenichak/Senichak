@@ -1,1 +1,0 @@
-{"message_id":62,"from":{"id":364229744,"is_bot":false,"first_name":"Bogdan","last_name":"Senichak","username":"Badyasik","language_code":"uk"},"chat":{"id":364229744,"first_name":"Bogdan","last_name":"Senichak","username":"Badyasik","type":"private"},"date":1651683332,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}
