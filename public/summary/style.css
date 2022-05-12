@@ -27,7 +27,7 @@ section h2 {
 
 .section-grid {
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap: 10px 15px;
 }
 
