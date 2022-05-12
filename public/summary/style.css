@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 20px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    border-bottom: 2px solid gainsboro;
+    padding: 20px 0;
+    
+}
+
+.header {
+    font-size: 16pt;
+}
+
+section h2 {
+    font-size: 14pt;
+    padding-bottom: 10px;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 10px 15px;
+}
+
+.section-date {
+    text-align: right;
+    font-weight: 100;
+    font-size: 10pt;
+}
+
+.section-text {
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+.section-text span {
+    display: block;
+    font-weight: 100;
+    margin: 5px 0;
+}
