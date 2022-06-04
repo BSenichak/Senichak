@@ -47,6 +47,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px 50px;
+	flex-wrap: wrap;
 }
 
 .logo {
@@ -56,10 +57,12 @@ nav {
 .menu ul {
 	display: flex;
 	list-style: none;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .menu ul li {
-	padding: 1em 2em;
+	padding: 1vh;
 }
 
 .menu ul li a {
@@ -281,4 +284,13 @@ footer p {
 .social_contacts a:hover {
 	color: orange;
 	transition: 0.9s;
+}
+
+@media screen and (max-width: 500px){
+	.tiles{
+		grid-template-columns: 1fr 1fr;
+	}
+	nav {
+		justify-content: center;
+	}
 }
